@@ -24,6 +24,11 @@ export default defineConfig([
     },
     rules: {
       "no-unused-vars": ["warn", { varsIgnorePattern: "^_" }],
+      // 👇 Permite exportar tu hook junto al componente sin romper Fast Refresh
+      "react-refresh/only-export-components": [
+        "error",
+        { allowExportNames: ["useCities"] },
+      ],
     },
   },
 ]);
