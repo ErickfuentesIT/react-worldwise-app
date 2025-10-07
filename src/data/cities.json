@@ -35,18 +35,6 @@
         "lng": 13.376933665713324
       },
       "id": "98443197"
-    },
-    {
-      "id": "f19d",
-      "cityName": "Santa Tecla",
-      "country": "El Salvador",
-      "emoji": "🇸🇻",
-      "date": "2025-10-07T19:29:32.975Z",
-      "notes": "aqui vivo",
-      "position": {
-        "lat": "13.66733825965496",
-        "lng": "-89.31335449218751"
-      }
     }
   ]
 }
