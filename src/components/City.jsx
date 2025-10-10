@@ -21,7 +21,7 @@ function City() {
     function () {
       getCity(id);
     },
-    [id]
+    [id, getCity] // SI SE AGREGA LA FUNCION getCity en el array de dependcias del useEffect entrara en un bucle infinito, es necesario usar useCallback
   );
 
   const { cityName, emoji, date, notes } = currentCity;
