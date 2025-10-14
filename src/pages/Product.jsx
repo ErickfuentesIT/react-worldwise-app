@@ -10,6 +10,7 @@ export default function Product() {
         <img
           src="img-1.jpg"
           alt="person with dog overlooking mountain with sunset"
+          className={styles.pageImage}
         />
         <div>
           <h2>About WorldWide.</h2>

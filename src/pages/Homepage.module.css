@@ -10,11 +10,10 @@
   background-position: center;
   padding: 2.5rem 5rem;
 }
-
 .homepage section {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  height: 85%;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
@@ -31,4 +30,38 @@
   font-size: 1.9rem;
   color: var(--color-light--1);
   margin-bottom: 2.5rem;
+}
+
+/* TABLET (≤ 1024px)*/
+@media (max-width: 1024px) {
+  .homepage {
+    min-height: 100dvh;
+
+    margin: 1rem;
+    padding: 5rem;
+  }
+
+  .homepage section {
+    min-height: 90%;
+  }
+}
+
+/*PHONE (≤ 600px) */
+@media (max-width: 600px) {
+  .homepage {
+    margin: 0;
+    padding: 1rem 0 0 0;
+  }
+
+  .homepage section {
+    width: 100%;
+  }
+
+  .homepage h1 {
+    font-size: 3rem;
+  }
+
+  .homepage h2 {
+    font-size: 1.5rem;
+  }
 }

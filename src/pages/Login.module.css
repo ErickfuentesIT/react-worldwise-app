@@ -24,3 +24,22 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+
+/* TABLET (≤ 1024px)*/
+@media (max-width: 1024px) {
+  .login {
+    min-height: 100dvh;
+  }
+
+  .form {
+    width: auto;
+  }
+}
+
+/*PHONE (≤ 600px) */
+@media (max-width: 600px) {
+  .login {
+    margin: 0;
+    padding: 1rem;
+  }
+}

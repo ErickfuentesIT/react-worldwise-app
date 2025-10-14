@@ -5,7 +5,7 @@ import {
   useReducer,
   useCallback,
 } from "react";
-import { BASE_URL } from "../config";
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:9000";
 
 const CitiesContext = createContext();
 
@@ -69,7 +69,9 @@ function CitiesProvider({ children }) {
       try {
         const res = await fetch(`${BASE_URL}/cities`);
         const data = await res.json();
-        dispatch({ type: "cities/loaded", payload: data });
+        console.log(data);
+        const arr = Array.isArray(data) ? data : data?.cities || [];
+        dispatch({ type: "cities/loaded", payload: arr });
       } catch {
         dispatch({
           type: "rejected",
