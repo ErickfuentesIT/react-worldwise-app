@@ -15,9 +15,8 @@ export default function Product() {
             Just $9/month.
           </h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae vel
-            labore mollitia iusto. Recusandae quos provident, laboriosam fugit
-            voluptatem iste.
+            Unlimited city tracking, cloud sync, no ads, secure backups—your
+            travels, always organized.
           </p>
         </div>
         <img
